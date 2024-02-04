@@ -1,0 +1,36 @@
+@import "../styles/font.css";
+
+.home-Button {
+    display: flex;
+    font-family: Tangerine;
+    height: 100%;
+    width: fit-content;
+    align-items: center;
+    padding: 0px 2%;
+}
+
+.nav-Button {
+    display: flex;
+    align-items: center;
+    min-width: 60px;
+    max-width: 100px;
+    padding: 2% 2%;
+    cursor: pointer;
+}
+
+.nav-Button:hover {
+    color: goldenrod;
+}
+
+.left {
+    margin-right: auto;
+}
+
+.down-arrow{
+    transform: translateY(3px);
+    
+}
+
+/* .right{
+    margin-left: auto;
+} */

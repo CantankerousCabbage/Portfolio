@@ -42,12 +42,18 @@
 }
 
 .App-header {
-  min-height: 10vh;
+  height: 10vh;
+  color: white;
+  align-items: center;
+  display: flex;
+  padding-right: 10vw;
 }
 
 .App-content {
   /* background-color: blanchedalmond; */
   min-height:  85vh;
+  
+  
 
 }
 

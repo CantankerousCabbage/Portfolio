@@ -2,26 +2,20 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import HomeButton from './components/homeButton';
+import NavButton from './components/navButton';
+import NavDropDown from './components/navDropDown';
+
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.tsx</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
     <div className='App'>
-      <div className='App-header'></div>
+      <div className='App-header'>
+        <HomeButton />
+        <NavButton title={"About"} />
+        <NavDropDown title={"Pages"} />
+        <NavButton title={"Portfolio"} />
+
+      </div>
       <div className='App-content'>
         {/* Add content */}
       </div>
