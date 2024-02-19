@@ -15,9 +15,10 @@ import Portfolio from './views/Portfolio';
 import HomeButton from './components/homeButton';
 import NavButton from './components/navButton';
 import NavDropDown from './components/navDropDown';
+import Footer from './components/footer';
 
 function App() {
-  const pages = [{name: "page1"}, {name: "page1"}, {name: "page1"}];
+  // const pages = [{name: "page1"}, {name: "page1"}, {name: "page1"}];
 
   return (
     
@@ -35,15 +36,17 @@ function App() {
             <Route path="/" element={<Home />}/>
             <Route path="/About" element={<About />}/>
             <Route path="/Pages" element={<Pages />}>
-              {pages.forEach(page => {})}
-              <Route path="/dummy1" />
+              
+              {/* <Route path="/dummy1" /> */}
             </Route>
             <Route path="/Portfolio" element={<Portfolio />}/>
           </Routes>
         </Router>
 
-      <div className='App-footer'></div>
+      <Footer />
     </div>
+
+
   );
 }
 

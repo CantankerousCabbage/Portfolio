@@ -2,7 +2,7 @@ import './globalNav.css';
 
 //React
 
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const NavButton = ( { destination, title } ) => {
     const navigate = useNavigate();
@@ -18,4 +18,4 @@ const NavButton = ( { destination, title } ) => {
     );
 }
 
-export default NavButton
+export default NavButton;
