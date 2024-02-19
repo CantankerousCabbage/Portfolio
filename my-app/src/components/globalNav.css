@@ -38,6 +38,10 @@
     
 }
 
+.link-icon {
+    color: black;
+}
+
 .linkedin {
     /* background-color: white;
     color: #0077b5; */
@@ -48,7 +52,7 @@
 }
 
 .github {
-
+    color: black;
 }
 
 .download {
@@ -59,6 +63,7 @@
     box-shadow: 0 2px 4px 0 black;
     width: fit-content;
     padding: 5px;
+    cursor: pointer;
 }
 
 .footer-item1 {

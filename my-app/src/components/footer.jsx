@@ -1,5 +1,6 @@
 //Components
 import ResumeButton from './resumeButton'
+import { Link } from 'react-router-dom';
 
 //Icons
 import { IconContext } from 'react-icons';
@@ -11,21 +12,29 @@ import { FaGithub } from "react-icons/fa6";
 import '../App.css'
 
 
+
 const Footer = () => {
     return (
         <div className='App-footer'>
             <div className='footer-item1'>
-                <IconContext.Provider value={{className: 'linkedin'}}>
-                    <FaLinkedin />
-                </IconContext.Provider>
+                <a href='https://www.linkedin.com/in/joseph-warren-34728b231/'>
+                    <IconContext.Provider value={{className: 'link-icon'}}>
+                        <FaLinkedin />
+                    </IconContext.Provider>
+                </a>
+                
 
-                <IconContext.Provider value={{className: 'github'}}>
-                    <FaGithub />
-                </IconContext.Provider>
+                <a href='https://github.com/CantankerousCabbage?tab=repositories'>
+                    <IconContext.Provider value={{className: 'link-icon'}}>
+                        <FaGithub />
+                    </IconContext.Provider>
+                </a>
 
-                <IconContext.Provider value={{className: 'leetCode'}}>
-                    <SiLeetcode />
-                </IconContext.Provider>
+                <a href='https://leetcode.com/CantankerousCabbage/'>
+                    <IconContext.Provider value={{className: 'link-icon'}}>
+                        <SiLeetcode />
+                    </IconContext.Provider>
+                </a>
             </div>
             
 
